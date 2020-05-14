@@ -8,7 +8,7 @@ import { DatePipe } from '@angular/common';
   providedIn: 'root',
 })
 export class ChatService {
-  private endpoint = 'http://localhost:9000/api/chats';
+  private endpoint = 'https://chatswebapi.herokuapp.com/api/chats';
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',

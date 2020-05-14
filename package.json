@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +28,7 @@
     "adapter": "^1.0.0-beta.8",
     "bootstrap": "^4.4.1",
     "eva-icons": "^1.1.2",
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
     "moment": "^2.25.3",
     "ngx-bootstrap": "^5.6.1",
@@ -54,5 +56,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
   }
 }
